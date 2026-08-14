@@ -1,0 +1,86 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      repin_images:
+        description: 'Re-pin every image slot to a freshly chosen photo'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # to commit images.lock.json / CREDITS.md back
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # Downloaded originals, keyed on the pins. A rebuild of the same commit
+      # is a cache hit and never touches the provider.
+      - name: Restore image cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules/.cache/images
+          key: images-${{ hashFiles('images.lock.json') }}
+          restore-keys: images-
+
+      # Fills any slot that has no pin yet (or whose query changed). Slots that
+      # are already pinned are left exactly as they are, so photos do not drift
+      # between deploys. Pass repin_images to deliberately reshuffle.
+      - name: Pin royalty-free photos
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: pnpm images:resolve ${{ inputs.repin_images && '--force' || '' }}
+
+      - name: Build image derivatives and credits
+        run: pnpm images:build
+
+      - name: Verify every slot is a real, credited photo
+        run: pnpm images:verify
+
+      # Keeps the pins and the credits table in the repo so the deployed site
+      # is always reproducible from a commit.
+      - name: Commit updated pins
+        run: |
+          if git diff --quiet -- images.lock.json CREDITS.md; then
+            echo "No pin changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images.lock.json CREDITS.md
+          git commit -m "chore(images): update pinned photos and credits"
+          git push
+
+      - run: pnpm build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

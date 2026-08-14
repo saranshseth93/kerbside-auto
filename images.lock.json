@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "provider": null,
+  "resolvedAt": null,
+  "slots": {
+    "hero": {
+      "provider": "placeholder",
+      "id": "hero",
+      "creator": "Generated placeholder",
+      "creatorUrl": "",
+      "licence": "n/a",
+      "licenceUrl": "",
+      "sourcePage": "",
+      "downloadUrl": "",
+      "placeholder": true,
+      "aspect": 1.1,
+      "derivatives": [
+        {
+          "width": 560,
+          "height": 509
+        },
+        {
+          "width": 900,
+          "height": 818
+        },
+        {
+          "width": 1400,
+          "height": 1273
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAwCdASoUABIAPt1mq1ExJSOjqAgCIBuJaQDKABdzJMAA/u1m6BXPgZZ0AEThIYEfCwL4AAA="
+    },
+    "service-logbook": {
+      "provider": "placeholder",
+      "id": "service-logbook",
+      "creator": "Generated placeholder",
+      "creatorUrl": "",
+      "licence": "n/a",
+      "licenceUrl": "",
+      "sourcePage": "",
+      "downloadUrl": "",
+      "placeholder": true,
+      "aspect": 1.5,
+      "derivatives": [
+        {
+          "width": 420,
+          "height": 280
+        },
+        {
+          "width": 720,
+          "height": 480
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAABQAwCdASoUAA0APt1apky9JSOiMAgDoBuJZwC2yC0HxPlkAAD+7D+WlZzARV1WhYMaoQDPwAA="
+    },
+    "service-brakes": {
+      "provider": "placeholder",
+      "id": "service-brakes",
+      "creator": "Generated placeholder",
+      "creatorUrl": "",
+      "licence": "n/a",
+      "licenceUrl": "",
+      "sourcePage": "",
+      "downloadUrl": "",
+      "placeholder": true,
+      "aspect": 1.5,
+      "derivatives": [
+        {
+          "width": 420,
+          "height": 280
+        },
+        {
+          "width": 720,
+          "height": 480
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAwAwCdASoUAA0APt1cpky9JSOiMAgDoBuJaQAAetGD1OAAAP7sP5aVnMBHn8zxk1DnAuUTrAA="
+    },
+    "service-inspection": {
+      "provider": "placeholder",
+      "id": "service-inspection",
+      "creator": "Generated placeholder",
+      "creatorUrl": "",
+      "licence": "n/a",
+      "licenceUrl": "",
+      "sourcePage": "",
+      "downloadUrl": "",
+      "placeholder": true,
+      "aspect": 1.5,
+      "derivatives": [
+        {
+          "width": 420,
+          "height": 280
+        },
+        {
+          "width": 720,
+          "height": 480
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAgCdASoUAA0APt1cpky9JSOiMAgDoBuJZwCw7C5+gAD+7WeUlZzARNu160LmUglwd/1NdS0rgAAA"
+    },
+    "van": {
+      "provider": "placeholder",
+      "id": "van",
+      "creator": "Generated placeholder",
+      "creatorUrl": "",
+      "licence": "n/a",
+      "licenceUrl": "",
+      "sourcePage": "",
+      "downloadUrl": "",
+      "placeholder": true,
+      "aspect": 1.8,
+      "derivatives": [
+        {
+          "width": 560,
+          "height": 311
+        },
+        {
+          "width": 900,
+          "height": 500
+        },
+        {
+          "width": 1400,
+          "height": 778
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAABwAwCdASoUAAsAPt1cp0y/pSOiMAgD8BuJaQDE2DBhjHgiAAAA/tsMRk8GVOgPlviaNeBaMYAAAA=="
+    },
+    "tools": {
+      "provider": "placeholder",
+      "id": "tools",
+      "creator": "Generated placeholder",
+      "creatorUrl": "",
+      "licence": "n/a",
+      "licenceUrl": "",
+      "sourcePage": "",
+      "downloadUrl": "",
+      "placeholder": true,
+      "aspect": 2.2,
+      "derivatives": [
+        {
+          "width": 768,
+          "height": 349
+        },
+        {
+          "width": 1280,
+          "height": 582
+        },
+        {
+          "width": 1920,
+          "height": 873
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAgCdASoUAAkAPt1cpkyopSOiMAgBEBuJaQC7ADDWAAD+7373QEr145SWfWYAAAA="
+    }
+  }
+}

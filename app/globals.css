@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+/*
+ * Kerbside Auto — a workshop palette, not a spice palette.
+ *
+ * Light, high-contrast and utilitarian: concrete paper, ink navy, and a
+ * hi-vis amber that only ever means "act on this". Deliberately the opposite
+ * of the dark, warm demos in the same portfolio.
+ */
+@theme {
+  --color-paper: #f4f4f2;
+  --color-panel: #ffffff;
+  --color-slab: #e8e8e4;
+  --color-ink: #14181f;
+  --color-ink-soft: #48505d;
+  --color-ink-mute: #7b8494;
+  --color-amber: #f2830c;
+  --color-amber-soft: #fff2e0;
+  --color-steel: #1e3a5f;
+  --color-line: #d6d6d0;
+  --color-go: #17795e;
+
+  --font-family-display: var(--font-archivo);
+  --font-family-body: var(--font-inter);
+  --font-family-mono: var(--font-mono);
+}
+
+/* Diagonal hazard stripe, used as a section rule. */
+.hazard-rule {
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-ink) 0 10px,
+    var(--color-amber) 10px 20px
+  );
+}
+
+/* Faint engineering grid behind hero-style panels. */
+.blueprint-grid {
+  background-image:
+    linear-gradient(var(--color-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@keyframes ka-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*
+ * Scroll reveals are CSS-only, driven by an IntersectionObserver that just
+ * toggles a class. No animation library ships to the browser for this.
+ *
+ * The hidden state is scoped to `.js-reveal`, which an inline script sets on
+ * <html> before first paint. If that script never runs — JS disabled, a bundle
+ * that fails to load, a crawler that does not execute it — nothing is ever
+ * hidden and the whole page reads as plain content.
+ */
+.js-reveal .reveal {
+  opacity: 0;
+}
+
+.js-reveal .reveal.is-visible {
+  animation: ka-rise 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .reveal,
+  .js-reveal .reveal.is-visible {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,81 @@
+export const site = {
+  name: 'Kerbside Auto',
+}
+
+/** @typedef {{
+ *   id: string,
+ *   query: string,
+ *   usage: string,
+ *   aspect: number,
+ *   widths: number[],
+ *   orientation?: 'landscape' | 'portrait' | 'square',
+ *   minWidth?: number,
+ *   focus?: string,
+ *   placeholderColours?: [string, string],
+ * }} Slot
+ */
+
+/** @type {Slot[]} */
+export const slots = [
+  {
+    id: 'hero',
+    query: 'mechanic working on car engine',
+    usage: 'Hero photograph',
+    aspect: 1.1,
+    widths: [560, 900, 1400],
+    orientation: 'landscape',
+    minWidth: 1600,
+    focus: 'attention',
+    placeholderColours: ['#48505d', '#14181f'],
+  },
+  {
+    id: 'service-logbook',
+    query: 'car engine oil change service',
+    usage: 'Logbook service card',
+    aspect: 1.5,
+    widths: [420, 720],
+    orientation: 'landscape',
+    focus: 'attention',
+    placeholderColours: ['#5b6472', '#14181f'],
+  },
+  {
+    id: 'service-brakes',
+    query: 'car brake disc rotor repair',
+    usage: 'Brakes service card',
+    aspect: 1.5,
+    widths: [420, 720],
+    orientation: 'landscape',
+    focus: 'attention',
+    placeholderColours: ['#6b6058', '#14181f'],
+  },
+  {
+    id: 'service-inspection',
+    query: 'mechanic inspecting used car checklist',
+    usage: 'Pre-purchase inspection card',
+    aspect: 1.5,
+    widths: [420, 720],
+    orientation: 'landscape',
+    focus: 'attention',
+    placeholderColours: ['#4a5a6b', '#14181f'],
+  },
+  {
+    id: 'van',
+    query: 'white work van parked street',
+    usage: 'Service area section',
+    aspect: 1.8,
+    widths: [560, 900, 1400],
+    orientation: 'landscape',
+    focus: 'attention',
+    placeholderColours: ['#8a9099', '#3a4048'],
+  },
+  {
+    id: 'tools',
+    query: 'mechanic tools workshop flat lay',
+    usage: 'How it works section',
+    aspect: 2.2,
+    widths: [768, 1280, 1920],
+    orientation: 'landscape',
+    focus: 'attention',
+    placeholderColours: ['#2c3138', '#14181f'],
+  },
+]
