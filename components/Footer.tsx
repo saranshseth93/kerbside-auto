@@ -14,7 +14,7 @@ export function Footer() {
             <br />
             {business.suburb}, {business.city}
           </p>
-          <p className="font-mono text-[11px] text-paper/40 mt-3">
+          <p className="font-mono text-[11px] text-paper/55 mt-3">
             {business.abnLabel}
           </p>
         </div>
@@ -70,7 +70,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-paper/15">
-        <p className="mx-auto max-w-7xl px-5 py-6 font-body text-xs text-paper/40">
+        <p className="mx-auto max-w-7xl px-5 py-6 font-body text-xs text-paper/55">
           {business.name} is a fictional business. This site is a portfolio spec
           build.
         </p>
