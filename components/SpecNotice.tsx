@@ -25,7 +25,7 @@ export function SpecNoticeFooter() {
   return (
     <aside aria-label="About this site" className="bg-slab border-t border-line">
       <div className="mx-auto max-w-3xl px-5 py-14 text-center">
-        <h2 className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber">
+        <h2 className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber-ink">
           About this site
         </h2>
         <p className="font-body text-sm text-ink-soft leading-relaxed mt-4">

@@ -22,7 +22,7 @@ export function Booking() {
     <section id="book" className="bg-slab py-20 lg:py-28 border-t border-line">
       <div className="mx-auto max-w-7xl px-5 grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16">
         <div>
-          <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber">
+          <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber-ink">
             Book it in
           </p>
           <h2 className="font-display font-extrabold text-ink uppercase tracking-[-0.02em] text-[clamp(2rem,4.5vw,3.25rem)] leading-[1.02] mt-4">
@@ -147,7 +147,7 @@ export function Booking() {
             </h3>
             <a
               href={business.phoneHref}
-              className="block font-mono font-bold text-2xl text-ink mt-2 hover:text-amber transition-colors"
+              className="block font-mono font-bold text-2xl text-ink mt-2 hover:text-amber-ink transition-colors"
             >
               {business.phoneLabel}
             </a>

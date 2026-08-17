@@ -41,7 +41,7 @@ export function Nav() {
         <div className="flex items-center gap-2">
           <a
             href={business.phoneHref}
-            className="hidden sm:inline font-mono text-sm font-medium text-ink hover:text-amber transition-colors"
+            className="hidden sm:inline font-mono text-sm font-medium text-ink hover:text-amber-ink transition-colors"
           >
             {business.phoneLabel}
           </a>

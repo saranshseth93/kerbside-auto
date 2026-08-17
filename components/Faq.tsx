@@ -10,7 +10,7 @@ export function Faq() {
     <section id="faq" className="bg-paper py-20 lg:py-28">
       <div className="mx-auto max-w-3xl px-5">
         <Reveal>
-          <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber">
+          <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber-ink">
             Questions
           </p>
           <h2 className="font-display font-extrabold text-ink uppercase tracking-[-0.02em] text-[clamp(2rem,4.5vw,3.25rem)] leading-[1.02] mt-4">

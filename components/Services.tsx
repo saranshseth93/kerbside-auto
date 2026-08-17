@@ -7,7 +7,7 @@ export function Services() {
     <section id="services" className="bg-paper py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5">
         <Reveal>
-          <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber">
+          <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber-ink">
             What we do
           </p>
           <h2 className="font-display font-extrabold text-ink uppercase tracking-[-0.02em] text-[clamp(2rem,4.5vw,3.25rem)] leading-[1.02] mt-4 max-w-2xl">
@@ -54,7 +54,7 @@ export function Services() {
                         key={item}
                         className="font-body text-sm text-ink-soft flex gap-2.5 leading-snug"
                       >
-                        <span className="text-amber font-bold shrink-0" aria-hidden="true">
+                        <span className="text-amber-ink font-bold shrink-0" aria-hidden="true">
                           /
                         </span>
                         {item}

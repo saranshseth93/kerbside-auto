@@ -13,8 +13,18 @@
   --color-slab: #e8e8e4;
   --color-ink: #14181f;
   --color-ink-soft: #48505d;
-  --color-ink-mute: #7b8494;
+  /* Darkened from #7b8494, which was 3.06:1 on slab and 3.77:1 on panel and
+     failed AA for the small mono labels it is used on. It only ever appears
+     on light surfaces, so one value covers every case. */
+  --color-ink-mute: #5f6875;
   --color-amber: #f2830c;
+  /* Amber for text sitting on a light surface.
+     The hi-vis amber is 2.12:1 on slab — unreadable at 11px — but darkening
+     the token itself is not an option, because it also sits on bg-ink where
+     it passes at 6.80:1. No single value clears 4.5:1 against both white and
+     #14181f, so light-background text gets its own token and the brand amber
+     stays exactly as it is for fills and dark sections. */
+  --color-amber-ink: #a34f05;
   --color-amber-soft: #fff2e0;
   --color-steel: #1e3a5f;
   --color-line: #d6d6d0;

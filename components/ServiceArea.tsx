@@ -48,7 +48,7 @@ export function ServiceArea() {
       <div className="mx-auto max-w-7xl px-5">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber">
+            <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-amber-ink">
               Service area
             </p>
             <h2 className="font-display font-extrabold text-ink uppercase tracking-[-0.02em] text-[clamp(2rem,4.5vw,3.25rem)] leading-[1.02] mt-4">
