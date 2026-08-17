@@ -78,9 +78,14 @@ export async function searchPexels({ query, orientation, count = 40, key }) {
 export async function searchOpenverse({ query, orientation, count = 40 }) {
   const url = new URL('https://api.openverse.org/v1/images/')
   url.searchParams.set('q', query)
-  // CC0 and public-domain mark only. Nothing here carries a share-alike or
-  // non-commercial term that a client site could trip over.
-  url.searchParams.set('license', 'cc0,pdm')
+  // CC0, public-domain mark and CC-BY. All three permit commercial use, and
+  // CC-BY's attribution requirement is satisfied by the generated CREDITS.md,
+  // which records photographer, licence and source page straight from the API.
+  //
+  // Deliberately excluded: by-sa (share-alike could be read as licensing the
+  // page itself), nc (this is a studio's commercial portfolio) and nd (we crop
+  // and resize every photo, which is a derivative).
+  url.searchParams.set('license', 'cc0,pdm,by')
   url.searchParams.set('page_size', String(Math.min(count, 20)))
   url.searchParams.set('mature', 'false')
   if (orientation === 'landscape') url.searchParams.set('aspect_ratio', 'wide')

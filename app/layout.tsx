@@ -29,7 +29,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-AU">
+    // suppressHydrationWarning: the inline script below adds `js-reveal` to
+    // <html> before React hydrates, so the client element legitimately carries
+    // a class the server markup does not. Scoped to this element only.
+    <html lang="en-AU" suppressHydrationWarning>
       <head>
         {/*
           Opts the page into the hidden-until-revealed state, before first
@@ -43,7 +46,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${archivo.variable} ${inter.variable} ${jetbrainsMono.variable} bg-paper text-ink font-body antialiased`}
+        className={`${archivo.variable} ${inter.variable} ${jetbrainsMono.variable} grain bg-paper text-ink font-body antialiased`}
       >
         <a
           href="#main"

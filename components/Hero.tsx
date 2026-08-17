@@ -3,7 +3,7 @@ import { business, capabilities } from '@/lib/constants'
 
 export function Hero() {
   return (
-    <section id="top" className="relative bg-paper overflow-hidden">
+    <section id="top" className="relative bg-paper">
       <div className="absolute inset-0 blueprint-grid opacity-[0.5]" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-5 pt-16 pb-0 lg:pt-24">
@@ -49,13 +49,13 @@ export function Hero() {
 
           {/* Photo sits flush to the section base so the hazard rule cuts it off */}
           <div className="relative -mb-px">
-            <div className="relative border-2 border-ink bg-panel">
+            <div className="parallax relative border-2 border-ink bg-panel">
               <Photo
                 slot="hero"
                 alt="A mechanic working on a car engine"
-                sizes="(min-width: 1024px) 45vw, 100vw"
+                sizes="(min-width: 1024px) 52vw, 116vw"
                 priority
-                className="w-full h-auto block"
+                className="parallax-img w-full h-auto block"
               />
               <div className="absolute -top-px -left-px bg-amber px-3 py-1.5">
                 <span className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-ink">

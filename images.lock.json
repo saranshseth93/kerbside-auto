@@ -1,19 +1,22 @@
 {
   "version": 1,
-  "provider": null,
-  "resolvedAt": null,
+  "provider": "pexels",
+  "resolvedAt": "2026-08-15T03:30:10.801Z",
   "slots": {
     "hero": {
-      "provider": "placeholder",
-      "id": "hero",
-      "creator": "Generated placeholder",
-      "creatorUrl": "",
-      "licence": "n/a",
-      "licenceUrl": "",
-      "sourcePage": "",
-      "downloadUrl": "",
-      "placeholder": true,
-      "aspect": 1.1,
+      "provider": "pexels",
+      "id": "8478259",
+      "downloadUrl": "https://images.pexels.com/photos/8478259/pexels-photo-8478259.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/man-in-black-crew-neck-t-shirt-fixing-a-car-8478259/",
+      "creator": "Sergey  Meshkov",
+      "creatorUrl": "https://www.pexels.com/@19x14",
+      "licence": "Pexels License",
+      "licenceUrl": "https://www.pexels.com/license/",
+      "alt": "Auto mechanic performs engine maintenance on a car. Focus on hands and engine components.",
+      "width": 6720,
+      "height": 4480,
+      "fingerprint": "20baa60f1e181cf6",
+      "query": "mechanic working on car engine",
       "derivatives": [
         {
           "width": 560,
@@ -28,19 +31,23 @@
           "height": 1273
         }
       ],
-      "lqip": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAwCdASoUABIAPt1mq1ExJSOjqAgCIBuJaQDKABdzJMAA/u1m6BXPgZZ0AEThIYEfCwL4AAA="
+      "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACQAwCdASoUAA0APt1cpkyopSOiMAgBEBuJZQAATvOOTrQozIPgAP7pXfA9zNkKqjet0wuRfA0AbZqq6tiW5yTLHJm35ZUb/P1MK+FKRBq6nfPQIAA=",
+      "aspect": 1.1
     },
     "service-logbook": {
-      "provider": "placeholder",
-      "id": "service-logbook",
-      "creator": "Generated placeholder",
-      "creatorUrl": "",
-      "licence": "n/a",
-      "licenceUrl": "",
-      "sourcePage": "",
-      "downloadUrl": "",
-      "placeholder": true,
-      "aspect": 1.5,
+      "provider": "pexels",
+      "id": "13065691",
+      "downloadUrl": "https://images.pexels.com/photos/13065691/pexels-photo-13065691.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/pouring-oil-in-gloves-13065691/",
+      "creator": "Daniel Andraski",
+      "creatorUrl": "https://www.pexels.com/@daniel-andraski-197681005",
+      "licence": "Pexels License",
+      "licenceUrl": "https://www.pexels.com/license/",
+      "alt": "A mechanic wearing gloves pouring oil into a car engine in a garage setting.",
+      "width": 3936,
+      "height": 2624,
+      "fingerprint": "206c47c6106d734f",
+      "query": "car engine oil change service",
       "derivatives": [
         {
           "width": 420,
@@ -51,19 +58,23 @@
           "height": 480
         }
       ],
-      "lqip": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAABQAwCdASoUAA0APt1apky9JSOiMAgDoBuJZwC2yC0HxPlkAAD+7D+WlZzARV1WhYMaoQDPwAA="
+      "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoUAA0APt1ap0yopSOiMAgBEBuJZQCdACG+4kXzvU0mV18AAPsjbVlE1e8kb+oqMc2g5VLG3zOSap8/RelI0qVlCm7rIA11351NxIkAAAA=",
+      "aspect": 1.5
     },
     "service-brakes": {
-      "provider": "placeholder",
-      "id": "service-brakes",
-      "creator": "Generated placeholder",
-      "creatorUrl": "",
-      "licence": "n/a",
-      "licenceUrl": "",
-      "sourcePage": "",
-      "downloadUrl": "",
-      "placeholder": true,
-      "aspect": 1.5,
+      "provider": "pexels",
+      "id": "34277923",
+      "downloadUrl": "https://images.pexels.com/photos/34277923/pexels-photo-34277923.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/close-up-of-car-disc-brake-system-34277923/",
+      "creator": "Erik Mclean",
+      "creatorUrl": "https://www.pexels.com/@introspectivedsgn",
+      "licence": "Pexels License",
+      "licenceUrl": "https://www.pexels.com/license/",
+      "alt": "Detailed view of a vehicle's disc brake system with caliper, showcasing automotive technology.",
+      "width": 4240,
+      "height": 2832,
+      "fingerprint": "cd213b87fe8f9e08",
+      "query": "car brake disc rotor repair",
       "derivatives": [
         {
           "width": 420,
@@ -74,19 +85,23 @@
           "height": 480
         }
       ],
-      "lqip": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAwAwCdASoUAA0APt1cpky9JSOiMAgDoBuJaQAAetGD1OAAAP7sP5aVnMBHn8zxk1DnAuUTrAA="
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoUAA0APt1apkyopSOiMAgBEBuJZwDLLBTt2YtSC+dHHgAA+p5jGlONLxr2k6zLNT335j1ThyIQwLlMdi2a7iY0kZu+yfu+MKMpMAAA",
+      "aspect": 1.5
     },
     "service-inspection": {
-      "provider": "placeholder",
-      "id": "service-inspection",
-      "creator": "Generated placeholder",
-      "creatorUrl": "",
-      "licence": "n/a",
-      "licenceUrl": "",
-      "sourcePage": "",
-      "downloadUrl": "",
-      "placeholder": true,
-      "aspect": 1.5,
+      "provider": "pexels",
+      "id": "5276374",
+      "downloadUrl": "https://images.pexels.com/photos/5276374/pexels-photo-5276374.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/mechanic-repairing-a-vehicle-5276374/",
+      "creator": "Enis Yavuz",
+      "creatorUrl": "https://www.pexels.com/@enis-yavuz-3516387",
+      "licence": "Pexels License",
+      "licenceUrl": "https://www.pexels.com/license/",
+      "alt": "A mechanic works under a lifted car in an auto repair shop, adjusting parts.",
+      "width": 5472,
+      "height": 3648,
+      "fingerprint": "3a413d51b080c13d",
+      "query": "mechanic inspecting used car checklist",
       "derivatives": [
         {
           "width": 420,
@@ -97,19 +112,23 @@
           "height": 480
         }
       ],
-      "lqip": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAgCdASoUAA0APt1cpky9JSOiMAgDoBuJZwCw7C5+gAD+7WeUlZzARNu160LmUglwd/1NdS0rgAAA"
+      "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoUAA0APt1cp0yopSOiMAgBEBuJYgCdMoABC9/KwiKxgAD+3GzSHXhFX8Rcq1wfCP87U1KOEiH7LfitSbRS++YSZnzpI/mmWdVbR3rASCCGC+z95UAAAA==",
+      "aspect": 1.5
     },
     "van": {
-      "provider": "placeholder",
-      "id": "van",
-      "creator": "Generated placeholder",
-      "creatorUrl": "",
-      "licence": "n/a",
-      "licenceUrl": "",
-      "sourcePage": "",
-      "downloadUrl": "",
-      "placeholder": true,
-      "aspect": 1.8,
+      "provider": "pexels",
+      "id": "4391239",
+      "downloadUrl": "https://images.pexels.com/photos/4391239/pexels-photo-4391239.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/man-driving-a-silver-renault-kangoo-van-4391239/",
+      "creator": "Norma Mortenson",
+      "creatorUrl": "https://www.pexels.com/@norma-mortenson",
+      "licence": "Pexels License",
+      "licenceUrl": "https://www.pexels.com/license/",
+      "alt": "A delivery driver in a van using a smartphone while parked outside a modern building.",
+      "width": 8256,
+      "height": 5504,
+      "fingerprint": "c26296f35015869d",
+      "query": "white work van parked street",
       "derivatives": [
         {
           "width": 560,
@@ -124,19 +143,23 @@
           "height": 778
         }
       ],
-      "lqip": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAABwAwCdASoUAAsAPt1cp0y/pSOiMAgD8BuJaQDE2DBhjHgiAAAA/tsMRk8GVOgPlviaNeBaMYAAAA=="
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoUAA0APt1cpkyopSOiMAgBEBuJZwDKACHQWYm7tLxy4AAA/rX4ih2bTCTdaSsit+B6BSd3d9JCQVYRJYKIF04XLqYHRfWkodvY8gAA",
+      "aspect": 1.8
     },
     "tools": {
-      "provider": "placeholder",
-      "id": "tools",
-      "creator": "Generated placeholder",
-      "creatorUrl": "",
-      "licence": "n/a",
-      "licenceUrl": "",
-      "sourcePage": "",
-      "downloadUrl": "",
-      "placeholder": true,
-      "aspect": 2.2,
+      "provider": "pexels",
+      "id": "33134951",
+      "downloadUrl": "https://images.pexels.com/photos/33134951/pexels-photo-33134951.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/black-and-white-wrenches-on-asphalt-surface-33134951/",
+      "creator": "Quentin Martinez",
+      "creatorUrl": "https://www.pexels.com/@quentin-martinez-2147503099",
+      "licence": "Pexels License",
+      "licenceUrl": "https://www.pexels.com/license/",
+      "alt": "Black and white image of wrenches spread on asphalt with a hand picking up one.",
+      "width": 7234,
+      "height": 4069,
+      "fingerprint": "6b386f18b9e2463a",
+      "query": "mechanic tools workshop flat lay",
       "derivatives": [
         {
           "width": 768,
@@ -151,7 +174,8 @@
           "height": 873
         }
       ],
-      "lqip": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAgCdASoUAAkAPt1cpkyopSOiMAgBEBuJaQC7ADDWAAD+7373QEr145SWfWYAAAA="
+      "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACQAwCdASoUAAsAPt1apkyopSOiMAgBEBuJaQAAPGY9EMdq0vuAAP6iWC7ottAeS73ro3uKbL0TtJAFxgAAAA==",
+      "aspect": 2.2
     }
   }
 }
