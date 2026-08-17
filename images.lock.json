@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "provider": "openverse",
-  "resolvedAt": "2026-08-17T07:21:11.169Z",
+  "provider": "pexels",
+  "resolvedAt": "2026-08-17T08:16:26.229Z",
   "slots": {
     "hero": {
       "provider": "pexels",
@@ -176,6 +176,87 @@
       ],
       "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACQAwCdASoUAAsAPt1apkyopSOiMAgBEBuJaQAAPGY9EMdq0vuAAP6iWC7ottAeS73ro3uKbL0TtJAFxgAAAA==",
       "aspect": 2.2
+    },
+    "service-battery": {
+      "provider": "pexels",
+      "id": "37177070",
+      "downloadUrl": "https://images.pexels.com/photos/37177070/pexels-photo-37177070.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/close-up-of-car-battery-in-engine-bay-37177070/",
+      "creator": "Ayyeee Ayyeee",
+      "creatorUrl": "https://www.pexels.com/@ayyeee-ayyeee-434363205",
+      "licence": "Pexels License",
+      "licenceUrl": "https://www.pexels.com/license/",
+      "alt": "Detailed view of an orange car battery inside a vehicle's engine bay, highlighting its features.",
+      "width": 6240,
+      "height": 4160,
+      "fingerprint": "6fdef1cd65a6d606",
+      "query": "car battery",
+      "derivatives": [
+        {
+          "width": 420,
+          "height": 280
+        },
+        {
+          "width": 720,
+          "height": 480
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAwCdASoUAA0APt1apkyopSOiMAgBEBuJZwDCgCIj48Z1DnJAdnAA/s35DLu88o601QSNEchzJyM7MmH5K22uou7XDfiRboYAAA==",
+      "aspect": 1.5
+    },
+    "service-diagnostic": {
+      "provider": "pexels",
+      "id": "16303691",
+      "downloadUrl": "https://images.pexels.com/photos/16303691/pexels-photo-16303691.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/smartphone-in-close-up-16303691/",
+      "creator": "Erik Mclean",
+      "creatorUrl": "https://www.pexels.com/@introspectivedsgn",
+      "licence": "Pexels License",
+      "licenceUrl": "https://www.pexels.com/license/",
+      "alt": "Close-up of a smartphone showing car diagnostic app with OBD2 scanner in a garage setting.",
+      "width": 6000,
+      "height": 4000,
+      "fingerprint": "89b498aba160e72f",
+      "query": "car diagnostic scanner",
+      "derivatives": [
+        {
+          "width": 420,
+          "height": 280
+        },
+        {
+          "width": 720,
+          "height": 480
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAwCdASoUAA0APt1cpkyopSOiMAgBEBuJZwDA3AnTV/EJ+C60AADh3tNJpIx+D9ZQDAoaCSUnrmP7ct/88dQXW1lx3U6K4FhZ5Ii0OgAAAA==",
+      "aspect": 1.5
+    },
+    "service-roadworthy": {
+      "provider": "pexels",
+      "id": "3807386",
+      "downloadUrl": "https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg",
+      "sourcePage": "https://www.pexels.com/photo/man-in-black-jacket-and-black-pants-sitting-near-silver-vehicle-3807386/",
+      "creator": "Andrea Piacquadio",
+      "creatorUrl": "https://www.pexels.com/@olly",
+      "licence": "Pexels License",
+      "licenceUrl": "https://www.pexels.com/license/",
+      "alt": "Mechanic inspecting and adjusting tire pressure in an auto repair shop.",
+      "width": 4307,
+      "height": 2688,
+      "fingerprint": "e2bc23886f56dc93",
+      "query": "mechanic checking car tyre",
+      "derivatives": [
+        {
+          "width": 420,
+          "height": 280
+        },
+        {
+          "width": 720,
+          "height": 480
+        }
+      ],
+      "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAwCdASoUAAwAPt1cp0yopSOiMAgBEBuJZwAAWlyqEPqLQ9CO9KgA/uVsXRtzWdkn8lDrrv/Fv0NMuXWNUXOl/L4FUAAA",
+      "aspect": 1.5
     }
   }
 }

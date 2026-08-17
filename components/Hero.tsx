@@ -67,10 +67,17 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="hazard-rule" />
+      <div className="relative hazard-rule" />
 
-      {/* Capability strip — what the service is, not what anyone thinks of it */}
-      <div className="bg-ink">
+      {/*
+        Capability strip — what the service is, not what anyone thinks of it.
+
+        `relative` is load-bearing here. The blueprint grid above is absolutely
+        positioned, and positioned elements paint above non-positioned siblings
+        whatever the DOM order says, so the grid was drawing straight over this
+        strip and its text. Positioning the strip puts it back on top.
+      */}
+      <div className="relative bg-ink">
         <ul className="mx-auto max-w-7xl px-5 grid sm:grid-cols-2 lg:grid-cols-4">
           {capabilities.map((cap) => (
             <li

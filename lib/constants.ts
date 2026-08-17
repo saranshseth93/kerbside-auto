@@ -113,6 +113,7 @@ export const services: Service[] = [
   },
   {
     id: 'battery',
+    slot: 'service-battery',
     name: 'Battery & Starting',
     summary:
       'Not starting? We test the battery, alternator and starter before selling you anything.',
@@ -128,6 +129,7 @@ export const services: Service[] = [
   },
   {
     id: 'diagnostic',
+    slot: 'service-diagnostic',
     name: 'Diagnostic',
     summary:
       'Engine light, odd noise, or a smell you cannot place. We scan it and explain it in English.',
@@ -143,6 +145,7 @@ export const services: Service[] = [
   },
   {
     id: 'roadworthy',
+    slot: 'service-roadworthy',
     name: 'Roadworthy Prep',
     summary:
       'We check the car against the VicRoads list and fix what would fail, before you book the test.',

@@ -21,10 +21,17 @@ export function Services() {
           </p>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-line mt-12 border border-line">
+        {/*
+          The gap-px-over-bg-line trick draws 1px rules between cards, which
+          works from md up where there is a real grid. In a single mobile
+          column it collapses into one continuous slab of six sections with no
+          breathing room between them. Mobile gets real gaps and a border per
+          card instead; the hairline treatment resumes at md.
+        */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-px md:bg-line mt-12 md:border md:border-line">
           {services.map((service, i) => (
             <Reveal key={service.id} delay={(i % 3) * 0.08}>
-              <article className="bg-panel h-full flex flex-col">
+              <article className="bg-panel h-full flex flex-col border border-line md:border-0">
                 {service.slot ? (
                   <Photo
                     slot={service.slot}
