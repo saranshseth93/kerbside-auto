@@ -1,10 +1,21 @@
-import { business, navLinks, services } from '@/lib/constants'
+import { business } from '@/lib/constants'
 
+/**
+ * Two blocks, not four columns.
+ *
+ * This was a four-column link farm — brand, a copy of the nav, an unlinked
+ * list of services, contact — and the other two demos had the same one.
+ * Nothing is lost by cutting it: the nav is a sticky bar three scrolls up,
+ * and the services were plain text that linked nowhere.
+ *
+ * What is left is what a mobile mechanic's footer is for: who you are ringing
+ * and the number to ring.
+ */
 export function Footer() {
   return (
     <footer className="bg-ink text-paper">
       <div className="hazard-rule" />
-      <div className="mx-auto max-w-7xl px-5 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="mx-auto max-w-7xl px-5 py-14 flex flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="font-display font-extrabold uppercase tracking-tight text-lg">
             {business.name}
@@ -19,53 +30,19 @@ export function Footer() {
           </p>
         </div>
 
-        <nav aria-label="Footer">
+        {/* The number, at the size a number should be when the whole service
+            is "we come to you". */}
+        <div className="sm:text-right">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-amber">
-            Site
-          </p>
-          <ul className="mt-3 space-y-2">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="font-body text-sm text-paper/70 hover:text-paper transition-colors"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-
-        <div>
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-amber">
-            Services
-          </p>
-          <ul className="mt-3 space-y-2">
-            {services.map((service) => (
-              <li
-                key={service.id}
-                className="font-body text-sm text-paper/70"
-              >
-                {service.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-amber">
-            Contact
+            Book it in
           </p>
           <a
             href={business.phoneHref}
-            className="block font-mono text-sm text-paper/70 hover:text-paper transition-colors mt-3"
+            className="press block font-display font-extrabold text-3xl sm:text-4xl tracking-tight mt-2 hover:text-amber"
           >
             {business.phoneLabel}
           </a>
-          <p className="font-mono text-sm text-paper/70 mt-2">
-            {business.email}
-          </p>
+          <p className="font-mono text-sm text-paper/70 mt-2">{business.email}</p>
         </div>
       </div>
 
