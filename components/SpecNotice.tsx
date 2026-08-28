@@ -1,20 +1,19 @@
 import { specNotice } from '@/lib/constants'
 
-/** Permanent. A visitor should know this is a spec build before they read a price. */
+/** Permanent. A visitor should know this is an example before they read a price. */
 export function SpecNoticeBar() {
   return (
     <div className="bg-ink text-paper">
       <p className="mx-auto max-w-7xl px-5 py-2 font-mono text-[11px] tracking-wide text-center">
         <span className="font-bold uppercase text-amber">{specNotice.short}</span>
         <span className="hidden sm:inline text-paper/80">
-          {' '}— a spec build by{' '}
+          {' '}— {specNotice.bar}{' '}
           <a
             href={specNotice.studioUrl}
             className="underline underline-offset-2 hover:text-amber transition-colors"
           >
             {specNotice.studio}
           </a>
-          . Kerbside Auto is not a real workshop.
         </span>
       </p>
     </div>
@@ -32,12 +31,29 @@ export function SpecNoticeFooter() {
           {specNotice.long}
         </p>
         <p className="font-body text-sm text-ink-soft leading-relaxed mt-4">
-          Photography is royalty-free and credited in{' '}
+          {specNotice.honesty}
+        </p>
+
+        <div className="mt-10 border-t border-line pt-8">
+          <p className="font-display text-lg text-ink">{specNotice.ctaLabel}</p>
+          <p className="font-body text-sm text-ink-soft leading-relaxed mt-2">
+            {specNotice.ctaText}
+          </p>
+          <a
+            href={specNotice.ctaHref}
+            className="mt-5 inline-block bg-ink px-6 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-paper hover:bg-amber hover:text-ink transition-colors"
+          >
+            {specNotice.ctaButton}
+          </a>
+        </div>
+
+        <p className="font-body text-xs text-ink-soft leading-relaxed mt-8">
+          Photos are royalty-free and{' '}
           <a
             href={specNotice.creditsUrl}
             className="text-steel underline underline-offset-4 hover:text-ink transition-colors"
           >
-            CREDITS.md
+            credited here
           </a>
           . Built by{' '}
           <a

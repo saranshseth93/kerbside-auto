@@ -48,8 +48,8 @@ export function Footer() {
 
       <div className="border-t border-paper/15">
         <p className="mx-auto max-w-7xl px-5 py-6 font-body text-xs text-paper/55">
-          {business.name} is a fictional business. This site is a portfolio spec
-          build.
+          {business.name} is a made-up business. This site is an example of the
+          kind of site Pixel Pundit builds.
         </p>
       </div>
     </footer>

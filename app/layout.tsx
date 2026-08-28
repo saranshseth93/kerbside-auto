@@ -4,7 +4,7 @@ import './globals.css'
 
 const title = 'Kerbside Auto — Mobile Mechanic, Melbourne (Demo Site)'
 const description =
-  'A fictional mobile mechanic covering Melbourne’s inner north, designed and built by Pixel Pundit as a portfolio piece. Not a real business.'
+  'A fictional mobile mechanic covering Melbourne’s inner north, built by Pixel Pundit to show the kind of site we make. Not a real business.'
 
 export const metadata: Metadata = {
   title,

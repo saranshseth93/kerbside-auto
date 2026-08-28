@@ -256,11 +256,23 @@ export const navLinks = [
   { label: 'FAQ', href: '#faq' },
 ]
 
+// Written for the person this site is meant to impress: a mechanic or a tradie,
+// not a developer. "Spec build" and "portfolio piece" are industry words that
+// mean nothing outside the industry, so they are gone. The notice answers the
+// three things a real visitor actually wants to know — is this a real business,
+// why does it exist, and can I get one.
 export const specNotice = {
-  short: 'Demo site · fictional business',
-  long: 'Kerbside Auto is a fictional mobile mechanic, designed and built by Pixel Pundit as a portfolio piece. The services, prices, service area, phone number and ABN are illustrative. It is not a trading business. There are no reviews, ratings, job counts or customer numbers on this site because there is nothing real to count.',
+  short: 'Example site — not a real business',
+  bar: 'Kerbside Auto is made up. This site is an example of what we build.',
+  long: "Kerbside Auto isn't a real workshop. We invented it so we'd have something honest to show you — a complete, working website, built exactly the way we'd build yours. The services, prices, service area, phone number and ABN on it are all made up.",
+  honesty:
+    "You won't find reviews, star ratings or job counts anywhere on this site. A made-up business has nothing real to count, and inventing those is the one thing we won't do.",
+  ctaLabel: 'Want one for your business?',
+  ctaText: 'Every price is published on our site. No quotes on request.',
+  ctaHref: 'https://pixelpundit.dev/#pricing',
+  ctaButton: 'See what one costs',
   studio: 'Pixel Pundit',
-  studioUrl: 'https://pixelpundit.com.au',
+  studioUrl: 'https://pixelpundit.dev',
   creditsUrl:
     'https://github.com/saranshseth93/kerbside-auto/blob/master/CREDITS.md',
 }

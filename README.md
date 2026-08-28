@@ -1,7 +1,7 @@
 # Kerbside Auto
 
 A **fictional** mobile mechanic covering Melbourne's inner north, designed and
-built by [Pixel Pundit](https://pixelpundit.com.au) as a portfolio spec piece.
+built by [Pixel Pundit](https://pixelpundit.dev) as a portfolio spec piece.
 
 Kerbside Auto is not a real business. The services, prices, service area, hours,
 phone number and ABN are illustrative.
